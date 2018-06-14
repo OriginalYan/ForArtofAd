@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<title>ForArtofAd</title>
+	<link href="https://fonts.googleapis.com/css?family=Rubik:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!-- Навигация -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-8 col-xs-offset-2 col-md-10 col-md-offset-1">
+				<div class="nav nav-tabs">
+						<ul>
+							<li class="active"><a href="#main" data-toggle="tab">Основное</a></li>
+							<li><a href="#bonus" data-toggle="tab">Бонусные купоны</a></li>
+						</ul>
+				</div>	
+			</div>
+		</div>
+	</div>
+		<!-- Контентная часть -->
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2 col-md-10 col-md-offset-1">
+					<div class="tab-content">
+						
+						<div class="tab-pane active" id="main">
+							
+							<form action="#" class="form_main">
+								<div class="form-group inp">
+									<small>Название</small>
+									<input type="text"  required="" id="name">
+								</div>
+								<div class="form-group">
+									<small>Дата начала</small>
+									<input type="text" id="date_start" required="">
+								</div>
+								<div class="form-group">
+									<small>Дата окончания</small>
+									<input type="text" id="date_finish" required="">
+								</div>
+								<div class="form-group">
+									<small>Начало регистрации участников</small>
+									<input type="text" id="start_reg" required="">
+								</div>
+								<div class="form-group">
+									<small>Тип промоакции</small>
+									<select name="select_type" id="select">
+										<option disabled>Выберите тип промоакции</option>
+										<option>Бонусные купоны</option>
+										<option>Рекламные промоакции</option>
+									</select>
+							</div>
+							<div class="form-group bonus_plus">
+								<small>Описание</small>
+								<textarea id="textarea"></textarea>
+							</div>
+							<input type="submit" value="Валидировать" class="main-btn">
+							</form>
+						</div>
+						
+						<div class="tab-pane" id="bonus">
+
+							<form action="#" class="form-group form_bonus">
+								<div class="form-group">
+									<small>Стоимость одного купона</small>
+									<input type="text"  required="" class="price">
+								</div>
+								<div class="form-group">
+									<table class="table_one">
+										<tr><td>Расширенные настройки</td><td><input type="checkbox" class="checkbox_class" id="settings_check"></td></tr>
+										<tr><td>Регистрация участников</td><td><input type="checkbox" disabled="" class="checkbox_class" id="registrtion_peop"></td></tr>
+										<tr><td>Досрочное завершение акции</td><td><input type="checkbox" disabled="" class="checkbox_class" id="finish_sale"></td></tr>
+									</table>
+								</div>
+
+								<div class="form-group last_el">
+									<small >Право на досрочное завершение</small>
+									<select multiple size="5" disabled name="select_type" id="select_two">
+										<option>Кассир</option>
+										<option>Менеджер</option>
+										<option>Путин</option>
+										<option>НеПутин</option>
+									</select>
+								</div>
+								<input type="submit" value="Валидировать" class="main-btn">
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- all JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/bootstrap-datetimepicker.min.js"></script>
+	<script src="js/moment-with-locales.min.js"></script>
+</body>
+
+</html>

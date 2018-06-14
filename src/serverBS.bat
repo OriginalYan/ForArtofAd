@@ -1,0 +1,1 @@
+browser-sync start -s -f "*.html, css/*.css, js/*.js, less/*.less, sass_scss/*.sass, sass_scss/*.scss" --no-notify
